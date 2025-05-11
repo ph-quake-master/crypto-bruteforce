@@ -10,6 +10,13 @@
     <img width="1000" height="460" src="/assets/walletgen_linux2.png" />
 </p>
 
+## Downloads
+### WalletGen
+- [Windows x64](../../releases/walletgen)
+- [Linux](../../releases/walletgen)
+
+
+
 ## Overview
 
 **Wallet Gen** is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, **Wallet Gen** boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
@@ -33,13 +40,6 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 <p align="center">
     <img width="1000" height="460" src="/assets/walletgen_linux1.png" />
 </p>
-
-## Downloads
-### WalletGen
-- [Windows x64](../../releases/walletgen)
-- [Linux](../../releases/walletgen)
-
-
 
 # Searching for Crypto Wallets
 
